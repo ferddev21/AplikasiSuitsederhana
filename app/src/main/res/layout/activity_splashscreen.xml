@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splashscreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/colorDanger"
+                android:textSize="50dp"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="237dp"
+                android:src="@drawable/suit"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/description"
+                android:textSize="24dp"
+                android:textStyle="italic"
+                android:layout_marginBottom="50dp"
+                android:padding="5dp"/>
+
+            <Button
+                android:id="@+id/mulai"
+                android:onClick="onTap"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@color/colorDanger"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="@string/start"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
